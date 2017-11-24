@@ -20,7 +20,7 @@ ul li {
 	display: inline;
 	list-style: none;
 	padding-left: 5px;
-	padding-right: 5px;
+	padding-right: 15px;
 
 }
 
@@ -28,7 +28,8 @@ nav {
 	width: 100%;
 	height: 50px;
 	background-color: #868686;
-	text-align: center;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 /* end of copied code ;)*/
@@ -41,8 +42,7 @@ div#logo {
 }
 
 div#logo > h1 {
-	font-size: 100%;
-	line-height: 100%;
+	font-size: 95%;
 	vertical-align: middle;
 	display: inline;
 }
@@ -52,8 +52,12 @@ div#logo > h1 {
 	justify-content: flex-start;
 }
 
+div#row1 {
+	margin-bottom: 15px;
+}
+
 figure {
-	width: 49%;
+	width: 47%;
 	vertical-align: top;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
@@ -62,10 +66,22 @@ figure {
 	/*margin: 10px;*/
 }
 
+figure.left {
+	margin-right: 3%; 
+}
+
+figure.right {
+	margin-left: 3%;
+}
+
+figcaption {
+	font-size: 130%;
+}
+
 img.content {
-	width: 90%;
-	margin-right: 10%;
-	margin-top: 5%;
+	width: 100%;
+	/*margin-right: 10%; decided to add all margins to figure*/
+	/*margin-top: 5%;*/
 }
 
 img#logoimg {
@@ -74,12 +90,33 @@ img#logoimg {
 	margin-bottom: 10px;
 }
 
+/* just leaving it here, to show your what i tried first to clip the image 
+	clip-path: inset(0% 15% 0% 15%);
+
+adapted from: https://spigotdesign.com/crop-any-size-image-with-css/ 
+also didn't work 
+
+div.cropimage { 
+    width: 474px; 
+    height: 355px;
+    overflow: hidden; 
+}
+
+div.cropimage img { 
+    width: 100%;
+}
+
+now i go to photoshop...
+
+*/
+
 footer {
 	background-color: #E05151;
 	text-align: center;
 }
 
-footer p {
+footer > p {
+	font-size: 80%;
 	padding-top: 2em;
 	padding-bottom: 1em;
 }
