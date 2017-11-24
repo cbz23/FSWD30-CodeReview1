@@ -1,7 +1,6 @@
 /* reset everything*/
 
-
-ul,li,nav, section, footer {
+ul,li,nav, section, footer, figure {
 	margin: 0;
 	padding: 0;
 }
@@ -10,10 +9,11 @@ body {
 	width: 70%;
 	font-family: Montserrat,Arial,sans-serif;
 }
+
 /*this is my code from day4, hope you dont mind i copy it*/
 
 ul {
-	padding-top: 16px;
+	padding-top: 1em;
 }
 
 ul li {
@@ -31,18 +31,60 @@ nav {
 	text-align: center;
 }
 
+/* end of copied code ;)*/
+
 div#logo {
 	background-color: #E05151;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 2px;
+}
+
+div#logo > h1 {
+	font-size: 100%;
+	line-height: 100%;
+	vertical-align: middle;
+	display: inline;
+}
+
+#row1, #row2 {
+	display: flex;
+	justify-content: flex-start;
+}
+
+figure {
+	width: 49%;
+	vertical-align: top;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	/*margin: 10px;*/
+}
+
+img.content {
+	width: 90%;
+	margin-right: 10%;
+	margin-top: 5%;
 }
 
 img#logoimg {
 	width: 150px;
-}
-
-img {
-	width: 40%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 footer {
 	background-color: #E05151;
+	text-align: center;
+}
+
+footer p {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+.white {
+	color: white;
+	text-decoration-line: none;
 }
